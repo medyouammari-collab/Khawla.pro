@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lalla Khawla El Alami — CV</title>
+    <meta name="description" content="CV professionnel de Lalla Khawla El Alami — Responsable Administratif, Commercial & RH. 17+ ans d'expérience en gestion administrative, ressources humaines et assurance." />
+
+    <!-- Google Fonts: Inter, Playfair Display, JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- GSAP + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== SVG NOISE FILTER ===== -->
+    <svg style="position:absolute;width:0;height:0;">
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+        </filter>
+    </svg>
+    <div class="noise-overlay"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <span class="nav-logo">KE</span>
+        <div class="nav-links">
+            <a href="#about">À propos</a>
+            <a href="#experience">Expérience</a>
+            <a href="#skills">Compétences</a>
+            <a href="#education">Formation</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#contact" class="nav-cta">Me contacter</a>
+        <button class="nav-mobile-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">À propos</a>
+        <a href="#experience">Expérience</a>
+        <a href="#skills">Compétences</a>
+        <a href="#education">Formation</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-avatar" id="heroAvatar">
+                <span>KE</span>
+            </div>
+            <h1 class="hero-name" id="heroName">Lalla Khawla<br/><span class="hero-name-last">El Alami</span></h1>
+            <p class="hero-title" id="heroTitle">Responsable Administratif, Commercial & RH</p>
+            <div class="hero-stats" id="heroStats">
+                <span class="stat"><span class="stat-num">17+</span> ans d'expérience</span>
+                <span class="stat-sep">·</span>
+                <span class="stat"><span class="stat-num">6</span> postes</span>
+                <span class="stat-sep">·</span>
+                <span class="stat"><span class="stat-num">Maroc</span></span>
+            </div>
+            <div class="hero-ctas" id="heroCtas">
+                <a href="#contact" class="btn btn-accent">Me contacter</a>
+                <a href="#about" class="btn btn-outline">Découvrir mon parcours</a>
+            </div>
+            <div class="hero-scroll-indicator" id="heroScroll">
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="about-inner">
+            <div class="about-left">
+                <h2 class="section-title-serif">À propos</h2>
+            </div>
+            <div class="about-divider"></div>
+            <div class="about-right">
+                <p class="about-text">
+                    Professionnelle rigoureuse et curieuse avec plus de 17 ans d'expérience dans la gestion administrative, les ressources humaines, l'assurance et le développement commercial. Titulaire d'un diplôme en Génie Logiciel et d'une Licence en Ressources Humaines, je combine une double compétence technique et humaine pour piloter les opérations, structurer les équipes et accompagner la croissance des organisations.
+                </p>
+                <p class="about-text">
+                    Mon parcours, riche et diversifié — de la réception à la direction administrative — m'a forgée en leader polyvalente, capable de gérer simultanément le RH, le commercial et la gestion de projet. Je suis animée par l'envie constante d'apprendre et de contribuer à des projets ambitieux.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience" id="experience">
+        <h2 class="section-title-center">Parcours Professionnel</h2>
+        <div class="timeline">
+
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">2026 — Présent</span>
+                    <h3 class="timeline-role">Responsable Administratif, Commercial & RH</h3>
+                    <p class="timeline-company">SMART AFRICA</p>
+                    <p class="timeline-desc">Pilotage de l'ensemble des fonctions administratives, commerciales et RH. Structuration des processus internes, recrutement, gestion des partenariats et développement de la stratégie commerciale.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">2025 — 2026</span>
+                    <h3 class="timeline-role">Gestionnaire Administratif RH & Chargée de Projet</h3>
+                    <p class="timeline-company">Groupe Scolaire YAKADA</p>
+                    <p class="timeline-desc">Gestion administrative et RH du groupe scolaire. Coordination des projets pédagogiques et organisationnels. Supervision des équipes et optimisation des processus internes.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">2015 — 2025</span>
+                    <h3 class="timeline-role">Chargée en Assurance</h3>
+                    <p class="timeline-company">2A MAROC</p>
+                    <p class="timeline-desc">Gestion des dossiers d'assurance, relation client, suivi des sinistres et conformité réglementaire. 10 années d'expertise solide dans le secteur assurantiel marocain.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">2012 — 2014</span>
+                    <h3 class="timeline-role">Adjointe Responsable</h3>
+                    <p class="timeline-company">LEMSI</p>
+                    <p class="timeline-desc">Assistance à la direction dans la gestion quotidienne. Coordination des équipes, suivi des opérations et reporting. Contribution à l'amélioration des processus organisationnels.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">2011</span>
+                    <h3 class="timeline-role">Télétechnicienne</h3>
+                    <p class="timeline-company">SITEL</p>
+                    <p class="timeline-desc">Support technique et relation client à distance. Développement des compétences en communication et résolution de problèmes dans un environnement de service client exigeant.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <span class="timeline-period">2008 — 2011</span>
+                    <h3 class="timeline-role">Secrétaire Réceptionniste</h3>
+                    <p class="timeline-company">SDI / INTEL COM</p>
+                    <p class="timeline-desc">Accueil, gestion administrative, organisation d'agendas et coordination interne. Premier poste fondateur d'une carrière riche en gestion et organisation.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills" id="skills">
+        <h2 class="section-title-center light">Compétences</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-circle-wrap">
+                    <svg class="skill-circle" viewBox="0 0 120 120">
+                        <circle class="skill-bg" cx="60" cy="60" r="52" />
+                        <circle class="skill-progress" cx="60" cy="60" r="52" data-percent="95" />
+                    </svg>
+                    <span class="skill-percent" data-target="95">0%</span>
+                </div>
+                <h3 class="skill-name">Gestion Administrative & RH</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle-wrap">
+                    <svg class="skill-circle" viewBox="0 0 120 120">
+                        <circle class="skill-bg" cx="60" cy="60" r="52" />
+                        <circle class="skill-progress" cx="60" cy="60" r="52" data-percent="90" />
+                    </svg>
+                    <span class="skill-percent" data-target="90">0%</span>
+                </div>
+                <h3 class="skill-name">Gestion de Projet</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle-wrap">
+                    <svg class="skill-circle" viewBox="0 0 120 120">
+                        <circle class="skill-bg" cx="60" cy="60" r="52" />
+                        <circle class="skill-progress" cx="60" cy="60" r="52" data-percent="92" />
+                    </svg>
+                    <span class="skill-percent" data-target="92">0%</span>
+                </div>
+                <h3 class="skill-name">Assurance & Conformité</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle-wrap">
+                    <svg class="skill-circle" viewBox="0 0 120 120">
+                        <circle class="skill-bg" cx="60" cy="60" r="52" />
+                        <circle class="skill-progress" cx="60" cy="60" r="52" data-percent="85" />
+                    </svg>
+                    <span class="skill-percent" data-target="85">0%</span>
+                </div>
+                <h3 class="skill-name">Informatique & Génie Logiciel</h3>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle-wrap">
+                    <svg class="skill-circle" viewBox="0 0 120 120">
+                        <circle class="skill-bg" cx="60" cy="60" r="52" />
+                        <circle class="skill-progress" cx="60" cy="60" r="52" data-percent="88" />
+                    </svg>
+                    <span class="skill-percent" data-target="88">0%</span>
+                </div>
+                <h3 class="skill-name">Communication & Relation Client</h3>
+            </div>
+        </div>
+
+        <!-- Qualités personnelles -->
+        <div class="qualities">
+            <span class="quality-tag large">Rigoureuse</span>
+            <span class="quality-tag medium">Curieuse</span>
+            <span class="quality-tag large">Polyvalente</span>
+            <span class="quality-tag medium">Organisée</span>
+            <span class="quality-tag">Leader</span>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section class="education" id="education">
+        <h2 class="section-title-center">Formation</h2>
+        <div class="education-cards">
+            <div class="edu-card">
+                <span class="edu-year">2003 — 2005</span>
+                <h3 class="edu-diploma">Licence Professionnelle</h3>
+                <p class="edu-school">Ressources Humaines</p>
+            </div>
+            <div class="edu-card">
+                <span class="edu-year">2002 — 2004</span>
+                <h3 class="edu-diploma">Diplôme Technicien Spécialisé</h3>
+                <p class="edu-school">Analyse & Génie Logiciel Informatique</p>
+            </div>
+            <div class="edu-card">
+                <span class="edu-year">2002 — 2004</span>
+                <h3 class="edu-diploma">DEUG en Psychologie</h3>
+                <p class="edu-school">Université</p>
+            </div>
+            <div class="edu-card">
+                <span class="edu-year">2002</span>
+                <h3 class="edu-diploma">Baccalauréat Littéraire</h3>
+                <p class="edu-school">Lycée — Maroc</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INTERESTS ===== -->
+    <section class="interests" id="interests">
+        <h2 class="section-title-center light">Centres d'intérêt</h2>
+        <div class="interests-row">
+            <div class="interest-item">
+                <div class="interest-icon"><i data-lucide="chef-hat"></i></div>
+                <span>Cuisine</span>
+            </div>
+            <div class="interest-item">
+                <div class="interest-icon"><i data-lucide="headphones"></i></div>
+                <span>Podcasts</span>
+            </div>
+            <div class="interest-item">
+                <div class="interest-icon"><i data-lucide="footprints"></i></div>
+                <span>Marche</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="contact-inner">
+            <h2 class="contact-title">Travaillons<br/><em>ensemble</em></h2>
+            <p class="contact-sub">Disponible pour de nouvelles opportunités professionnelles. N'hésitez pas à me contacter.</p>
+            <div class="contact-links">
+                <a href="mailto:khawla.elalami@email.com" class="contact-link">
+                    <i data-lucide="mail"></i>
+                    <span>khawla.elalami@email.com</span>
+                </a>
+                <a href="tel:+212600000000" class="contact-link">
+                    <i data-lucide="phone"></i>
+                    <span>+212 6 00 00 00 00</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="contact-link">
+                    <i data-lucide="linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <a href="#" class="btn btn-accent btn-large">Télécharger mon CV</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-name">Lalla Khawla El Alami</span>
+            <span class="footer-made">Fait avec ❤️ et vibe coding · 2026</span>
+            <span class="footer-status">
+                <span class="status-dot"></span>
+                <span class="status-text">Disponible</span>
+            </span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
